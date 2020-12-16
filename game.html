@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blitz.io</title>
+</head>
+<style>
+    body{
+        background-color: skyblue;
+    }
+    #placeholder {
+        position: absolute;
+        margin: 5px;
+        right: 0px;
+    }
+
+    #shoot {
+        position: absolute;
+        top: 500px;
+        left: 500px;
+    }
+
+    #gameover {
+        color: lightgreen;
+        font-size: 500px;
+        position: absolute;
+        top: 20px;
+    }
+
+    #win {
+        color: red;
+        font-size: 500px;
+        position: absolute;
+        top: 20px;
+    }
+
+    .banners {
+        float: left;
+        padding: 15px;
+        margin: 10px;
+        background-color: rgb(33, 141, 19);
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .banners span {
+        color: blue;
+    }
+
+    #shield {
+        position: absolute;
+        top: 500px;
+        left: 0px;
+        background-color: black;
+        color: orange;
+        width: 100px;
+        height: 50px;
+        font-size: 25px;
+        border-radius:128px;
+    }
+     #home {
+        position: absolute;
+        top: 500px;
+        right: 0px;
+        background-color: black;
+        color: orange;
+        width: 100px;
+        height: 50px;
+        font-size: 25px;
+        border-radius:128px;
+    } 
+</style>
+
+<body>
+    <h1 id="gameover"></h1>
+    <h1 id="win"></h1>
+    <div class="labels">
+        <h1 class="banners"> Your Ammo
+            <span id="healthyou"></span>
+        </h1>
+        <h1 class="banners">Target Strength
+            <span id="health"></span>
+        </h1>
+        <h1 class="banners">Elapsed Time
+            <span id="time"></span>
+        </h1>
+    </div>
+    <img src="fighterJet.png" id="shoot">
+    <button id="shield">shield</button>
+    <img id="placeholder" src="placeholder.png" alt="placeholder">
+    <a href="index.html"><button id="home">home</button></a>
+    <!-- <img  src="monster.png" alt="monster"> -->
+</body>
+<script defer src="game.js"></script>
+
+</html>
